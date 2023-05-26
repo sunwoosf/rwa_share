@@ -44,6 +44,7 @@ where,
 * Direct Data Import from AWS S3 Buckets \
   *Polars*, *Pyarrow*, and *s3fs* enable to load Parquet files stored in AWS S3 buckets directly or indirectly.
   It makes this solution more flexible dealing with multiple data storage sources. Similar steps can be done over other cloud storages provided by *GCP*, *Azure*, and *OCI*
+* Transfer_amount in ETH and/USD
 
 
 # Data Access through APIs
