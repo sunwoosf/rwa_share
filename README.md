@@ -50,3 +50,9 @@ where,
   Output data can be accessible through a few diffent ways including (i) REST APIs, (ii) WebSocket, and (iii) Kafka message/streaming channels.
   To minimize the latency between the data and REST API & WebSocket servers (e.g., Nginx Apache, and FastAPI), it is recommended to host output data in Redis in-memory cache.
   Different time-resolution output data access can be designed as (i) multipe *"routes"* in REST API servers, (ii) WebSocket *"connections"* in WebSocket servers, and  (iii) message *"topics"* in kafka clusters.
+
+
+# Update
+* Bug fix : incorrect *null* decimal value assignment \
+  Initially, I set *null* decimal values shown in tokens.csv to zero. It was supposed to be 18.
+  Now, such mapping is updated correctly. However, the results are as same as before.
